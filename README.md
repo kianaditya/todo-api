@@ -1,3 +1,7 @@
 # TODO API
 
-We use Postgres, express and node to set up a TO-DO Api.
+This is an api to maintain a todo list.
+
+## Built with
+* [Postgres](https://www.postgresql.org/) for database
+* [Express](https://expressjs.com/) for web framework based on Node.js 
