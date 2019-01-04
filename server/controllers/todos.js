@@ -22,4 +22,23 @@ module.exports = {
     .then(todos => res.status(200).send(todos))
     .catch(error => res.status(400).send(error));
   },
+
+  retrieve(req,res){
+    return Todo
+    .findById(req.params.todoId,{
+        include:[{
+            model: TodoItem,
+            as: 'todoItems',
+        }]
+    })
+    .then(todo => {
+        if(!todo){
+            return res.status(404).send({
+                message: 'We cannot find this TODO'
+            });
+        }
+        return res.status(200).send(todo);
+    })
+    .catch(error => res.status(400).send(error))
+  },
 };
