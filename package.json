@@ -1,0 +1,19 @@
+{
+  "name": "postgress-react-node-tutorial",
+  "version": "1.0.0",
+  "description": "todo-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kianaditya/todo-api.git"
+  },
+  "author": "Aditya Naik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kianaditya/todo-api/issues"
+  },
+  "homepage": "https://github.com/kianaditya/todo-api#readme"
+}
